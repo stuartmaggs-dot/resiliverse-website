@@ -43,9 +43,18 @@
         }
         
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             font-size: 1.8rem;
             font-weight: bold;
             color: #3498db;
+        }
+        
+        .logo svg {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
         }
         
         .tagline {
@@ -304,7 +313,14 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">Resiliverse</div>
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="40" height="40">
+                        <circle cx="100" cy="100" r="90" fill="#0F172A" />
+                        <path d="M85 150 L115 150 L115 95 L85 95 Z" fill="#4B0082" />
+                        <path d="M55 90 L100 45 L145 90" fill="none" stroke="#008080" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Resiliverse
+                </div>
                 <div class="tagline">Navigate. Adapt. Thrive.</div>
             </div>
         </div>
